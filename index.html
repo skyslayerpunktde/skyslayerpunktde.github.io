@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=database,mail" />
+</head>
+<body class="darkmode">
+    <div class="navbar">
+        <div style="padding-left: 10px;">
+            <ul class="place-content-between" style="display: flex; align-items: center; gap: 10px;">
+                <div style="gap: 10px; display: flex;">
+                    <button id="darkToggle" class="themeicon">
+                        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Zm0-80q88 0 163-44t118-121q-86-8-163-43.5T463-465q-61-61-97-138t-43-163q-77 43-120.5 118.5T159-484q0 135 94.5 229.5T483-160Zm-20-305Z"/></svg>
+                        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M440-760v-160h80v160h-80Zm266 110-55-55 112-115 56 57-113 113Zm54 210v-80h160v80H760ZM440-40v-160h80v160h-80ZM254-652 140-763l57-56 113 113-56 54Zm508 512L651-255l54-54 114 110-57 59ZM40-440v-80h160v80H40Zm157 300-56-57 112-112 29 27 29 28-114 114Zm113-170q-70-70-70-170t70-170q70-70 170-70t170 70q70 70 70 170t-70 170q-70 70-170 70t-170-70Zm283-57q47-47 47-113t-47-113q-47-47-113-47t-113 47q-47 47-47 113t47 113q47 47 113 47t113-47ZM480-480Z"/></svg>
+                    </button>
+                    <a href="https://codeberg.org/FBIagent">
+                        <span class="icon icon--codeberg" aria-hidden="true"></span>
+                    </a>
+                    <a href="https://github.com/skyslayerpunktde">
+                        <span class="icon icon--github" aria-hidden="true"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/elias-gggg">
+                        <span class="icon icon--linkedin" aria-hidden="true"></span>
+                    </a>
+                    <a href="https://www.last.fm/user/Iawidjiawjid22">
+                        <span class="icon icon--lastfm" aria-hidden="true"></span>
+                    </a>
+                    <a href="mailto:bachmann.elias@proton.me">
+                        <span class="material-symbols-outlined" style="font-size: 190%;">mail</span>
+                    </a>
+                </div>
+                <div class="items-center flex flex-col" style="font-size: 80%;padding-right: 10px;">
+                    <div id="date">--</div>
+                    <div id="time">--:--:--</div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hero flex items-center justify-center">
+        <div class="card rounded-xl hover:scale-110 drop-shadow-2xl transition-all duration-200 ease-in-out">
+            <div class="flex items-center gap-12">
+                <div class="flex flex-col items-center">
+                    <img src="./assets/pfp.png" class="size-48 rounded-full">
+                    <strong style="margin-top: 15px; scale: 150%;">Elias Bachmann</strong>
+                    <div class="motd rounded-xl">
+                        <strong>Why did I learn programming?</strong>
+                        <p>
+                            I always loved computers already from a young age.
+                            The fact that you can basically do anything with those machines
+                            was such a fascinating thought, it felt like magic.
+                            That idea never left me. The only thing that changed
+                            is that it's not magic, it's art.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <div>
+                        <strong>My Toolbox</strong>
+                        <p style="font-size: 20px;">---------------------------</p> 
+                        <ul style="margin-left:  -5px" class="scale-90"">
+                            <div class="flex items-center">
+                                <span class="icon icon--archlinux" aria-hidden="true"></span>
+                                <p>Arch</p>
+                            </div> 
+                            <div class="flex items-center">
+                                <span class="icon icon--go" aria-hidden="true"></span>
+                                <p>GoLang</p>
+                            </div> 
+                            <div class="flex items-center">
+                                <span class="icon icon--python" aria-hidden="true"></span>
+                                <p>Python</p>
+                            </div> 
+                            <div class="flex items-center">
+                                <span class="icon icon--php" aria-hidden="true"></span>
+                                <p>PHP</p>
+                            </div> 
+                            <div class="flex items-center">
+                                <span class="icon icon--vue" aria-hidden="true"></span>
+                                <p>Vue Framework</p>
+                            </div> 
+                            <div class="flex items-center">
+                                <span class="icon icon--git" aria-hidden="true"></span>
+                                <p>Git</p>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="icon icon--obsidian" aria-hidden="true"></span>
+                                <p>Obsidian</p>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="icon icon--mysql" aria-hidden="true"></span>
+                                <p>MySQL</p>
+                            </div> 
+                            <div class="flex items-center">
+                                <span class="icon icon--duckdb" aria-hidden="true"></span>
+                                <p>DuckDB</p>
+                            </div> 
+                            <div class="flex">
+                                <span class="material-symbols-outlined" style="font-size: 16px; padding-top: 3px; padding-right: 6px;">database</span>
+                                <p>Manticore Search</p>
+                            </div>
+                        </ul>
+                        
+                        <p style="font-size: 20px;">---------------------------</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function tick() {
+            const now = new Date();
+            const pad = (n) => String(n).padStart(2, '0');
+
+            const time = pad(now.getHours()) + ':' + pad(now.getMinutes()) + ':' + pad(now.getSeconds());
+            document.getElementById('time').textContent = time;
+
+            const date = now.toLocaleDateString('de-DE', {
+                year: 'numeric', month: 'long', day: 'numeric'
+            });
+            document.getElementById('date').textContent = date;
+        }
+        
+        tick();
+        setInterval(tick, 1000);
+
+
+        document.getElementById('darkToggle').addEventListener('click', () => {
+        document.body.classList.toggle('darkmode');
+        });
+    </script>
+</body>
+</html>

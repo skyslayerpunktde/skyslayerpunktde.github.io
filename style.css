@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+:root {
+/*
+    --background-color: rgb(197, 215, 216);
+    --background-color2: rgb(215, 230, 230);
+
+    --text-color: rgb(45, 48, 55);
+
+    --primary-color: rgb(0, 106, 255);
+    --secondary-color: rgb(108, 200, 254);
+*/
+    --background-color: #ECEBDE;
+    --background-color2: #D7D3BF;
+
+    --text-color: rgb(34, 36, 40);
+
+    --primary-color: #000000;
+    --secondary-color: #d3d3eb;
+
+
+}
+
+body.darkmode {
+    --background-color2: #282828;
+    --background-color: #181818;
+
+    --text-color: #EAE0CF;
+}
+
+.themeicon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.themeicon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.icon-sun {
+    opacity: 0;
+}
+
+body.darkmode .icon-moon {
+    opacity: 0;
+}
+
+body.darkmode .icon-sun {
+    opacity: 1;
+}
+
+body {
+    transition: background-color 0.3s ease;
+}
+
+.navbar {
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
+
+    .material-symbols-outlined {
+        font-size: 24px;
+    }
+
+    p {
+        font-family: "Poppins";
+        size: 50%;
+        color: var(--text-color);
+        transition: color 0.3s ease;
+    }
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+strong {
+    color: var(--text-color); 
+}
+
+.hero {
+    background-image: url(./assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    h1 {
+        justify-content: center; align-items: center; height: 100vh; display: flex;
+    }
+}
+
+.card {
+    background-color: var(--background-color);
+
+    outline-color: var(--text-color);
+    outline-style:solid;
+
+    z-index: 100;
+    padding: 32px 40px;
+    color: var(--text-color);
+    max-width: calc(100vw - 40px);
+
+    p {
+        color: var(--text-color);
+    }
+}
+
+/*.motd {
+    font-size: 16px;
+    background-color: var(--secondary-color);
+    margin: 10px;
+}*/
+
+.motd {
+    margin-top: 10px;
+    max-width: 30ch;
+    font-family: "Poppins";
+    color: var(--text-color);
+
+    strong {
+        display: block;
+        font-size: 1rem;
+        margin-bottom: 6px;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 0.85rem;
+    }
+
+    background-color: var(--background-color2);
+    padding: 12px;
+}
+
+.icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    background-color: currentColor;
+    -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+            mask-position: center;
+    -webkit-mask-size: contain;
+            mask-size: contain;
+}
+
+.icon--go     { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/go.svg");     mask-image: url("https://unpkg.com/simple-icons@v16/icons/go.svg"); }
+.icon--python { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/python.svg"); mask-image: url("https://unpkg.com/simple-icons@v16/icons/python.svg"); }
+.icon--php    { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/php.svg");    mask-image: url("https://unpkg.com/simple-icons@v16/icons/php.svg"); }
+.icon--mysql  { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/mysql.svg");  mask-image: url("https://unpkg.com/simple-icons@v16/icons/mysql.svg"); }
+.icon--duckdb { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/duckdb.svg"); mask-image: url("https://unpkg.com/simple-icons@v16/icons/duckdb.svg"); }
+.icon--vue      { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/vuedotjs.svg");  mask-image: url("https://unpkg.com/simple-icons@v16/icons/vuedotjs.svg"); }
+.icon--archlinux { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/archlinux.svg"); mask-image: url("https://unpkg.com/simple-icons@v16/icons/archlinux.svg"); }
+.icon--git { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/git.svg"); mask-image: url("https://unpkg.com/simple-icons@v16/icons/git.svg"); }
+.icon--obsidian { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/obsidian.svg"); mask-image: url("https://unpkg.com/simple-icons@v16/icons/obsidian.svg"); }
+
+.icon--linkedin { -webkit-mask-image: url("https://thesvg.org/icons/linkedin/default.svg");  mask-image: url("https://thesvg.org/icons/linkedin/default.svg"); width: 30px; height: 30px; margin-right: 0; }
+.icon--codeberg { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/codeberg.svg");  mask-image: url("https://unpkg.com/simple-icons@v16/icons/codeberg.svg"); width: 30px; height: 30px; margin-right: 0; }
+.icon--lastfm { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/lastdotfm.svg");  mask-image: url("https://unpkg.com/simple-icons@v16/icons/lastdotfm.svg"); width: 30px; height: 30px; margin-right: 0; }
+.icon--github { -webkit-mask-image: url("https://unpkg.com/simple-icons@v16/icons/github.svg");  mask-image: url("https://unpkg.com/simple-icons@v16/icons/github.svg"); width: 30px; height: 30px; margin-right: 0; }
